@@ -1,59 +1,72 @@
-# ProjectFinal
+# Project Final (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Aplicação web construída com Angular. **Resumo**: descreva aqui o objetivo do projeto, o público-alvo e o valor principal entregue.
 
-## Development server
+## Visão geral
 
-To start a local development server, run:
+- **Status**: em desenvolvimento
+- **Stack**: Angular 19, TypeScript, RxJS, SCSS
+- **CLI**: Angular CLI 19.0.2
 
-```bash
-ng serve
-```
+## Requisitos
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Node.js** 18+ (recomendado)
+- **npm** 9+ (ou o gerenciador de pacotes de sua preferência)
 
-## Code scaffolding
+## Como executar localmente
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1) Instale as dependências:
 
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
-
-To build the project run:
+2) Inicie o servidor de desenvolvimento:
 
 ```bash
-ng build
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+3) Acesse no navegador: `http://localhost:4200/`
 
-## Running unit tests
+## Scripts principais
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- **Desenvolvimento**: `npm start`
+- **Build**: `npm run build`
+- **Build em modo watch**: `npm run watch`
+- **Testes unitários**: `npm test`
+
+## Estrutura do projeto
+
+```
+src/
+	app/
+	styles.scss
+	index.html
+	main.ts
+```
+
+## Padrões de qualidade
+
+- **Lints/format**: configure conforme a necessidade do time.
+- **Testes**: mantenha cobertura mínima e testes críticos para fluxos principais.
+
+## Deploy
+
+1) Gere o build de produção:
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+2) Publique o conteúdo de `dist/` no seu provedor (ex.: Vercel, Netlify, Azure, AWS).
 
-For end-to-end (e2e) testing, run:
+## Contribuição
 
-```bash
-ng e2e
-```
+1) Crie uma branch (`feature/nome-da-feature`).
+2) Faça alterações com mensagens de commit claras.
+3) Abra um Pull Request com descrição objetiva e prints quando aplicável.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Licença
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Defina a licença do projeto (ex.: MIT) e inclua o arquivo LICENSE.
